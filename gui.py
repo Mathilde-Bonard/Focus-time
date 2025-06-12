@@ -1,9 +1,10 @@
 from tkinter import *
-from test import app_block
+from functions import app_block
+from config import process_name
 
 def click():
     minutes = entry.get()
-    app_block(minutes)
+    app_block(minutes, process_name)
 
 window = Tk()
 
